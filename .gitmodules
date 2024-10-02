@@ -1,0 +1,3 @@
+[submodule "Molly-backend-spring"]
+	path = Molly-backend-spring
+	url = https://github.com/bang015/Molly-backend-spring.git

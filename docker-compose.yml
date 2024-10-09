@@ -12,30 +12,12 @@ services:
       VITE_SERVER_URL: ${VITE_SERVER_URL}
 
   backend:
-    build:
-      context: .
-      dockerfile: server/Dockerfile
+    image: bang015/backend
     container_name: backend
     networks:
       - app-network
     ports:
       - 8080:8080
-    environment:
-      NODE_ENV: ${NODE_ENV}
-      PORT: ${PORT}
-      DATABASE_NAME: ${DATABASE_NAME}
-      DATABASE_USERNAME: ${DATABASE_USERNAME}
-      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
-      DATABASE_HOST: ${DATABASE_HOST}
-      REDIS_HOST: ${REDIS_HOST}
-      REQ_ADDRESS: ${REQ_ADDRESS}
-      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET}
-      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET}
-      CLOUD_NAME: ${CLOUD_NAME}
-      API_KEY: ${API_KEY}
-      API_SECRET: ${API_SECRET}
-      EMAIL_USER: ${EMAIL_USER}
-      EMAIL_PASS: ${EMAIL_PASS}
 
   nginx:
     container_name: nginx

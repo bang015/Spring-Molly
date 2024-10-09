@@ -22,7 +22,6 @@ services:
   nginx:
     container_name: nginx
     image: nginx:latest
-    restart: always
     volumes:
       - ./nginx/:/etc/nginx/conf.d
       - /data/certbot/conf:/etc/letsencrypt

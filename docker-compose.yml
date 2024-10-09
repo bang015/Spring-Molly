@@ -18,6 +18,8 @@ services:
       - app-network
     ports:
       - 8080:8080
+    depends_on:
+      - mysql
 
   nginx:
     container_name: nginx
@@ -68,6 +70,7 @@ services:
     entrypoint: "/bin/sh -c 'certbot certonly --webroot -w /var/www/certbot -d molly.n-e.kr --email dh10162@naver.com --agree-tos --non-interactive && cp -a /etc/letsencrypt/live /etc/letsencrypt/archive /etc/letsencrypt/renewal /etc/letsencrypt'"
     depends_on:
       - frontend
+      - nginx
 
   certbot-renewal:
     image: certbot/certbot

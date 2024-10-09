@@ -7,4 +7,5 @@
 <div><b>배포 주소</b> : https://molly.n-e.kr/</div>
 <br>
 
-![mollyac](https://github.com/user-attachments/assets/639cd86f-a7ab-491b-97eb-25083a10fd12)
+
+![mollyack](https://github.com/user-attachments/assets/d31308b9-ff9b-47dd-b850-266863074ba6)

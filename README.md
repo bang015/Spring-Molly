@@ -3,6 +3,7 @@
 <div><b>📆 2023.12.19 ~ 2024.03.22 (94일)</b></div>
 <br>
 <div><b>배포 주소</b> : https://molly.n-e.kr/</div>
+<div>테스트 계정 email : test11@naver.com password : qwaszx11</div>
 <br>
 자세한 내용은 frontend, backend 레포지토리에 봐주시면 감사하겠습니다.
 <li>

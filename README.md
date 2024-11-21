@@ -26,7 +26,7 @@
 | **원인**         | - 웹소켓은 기본적으로 트래픽이 없는 경우 연결을 유지하지 않습니다. <br> - Nginx의 기본 설정(`proxy_read_timeout`)이 60초로 제한되어 타임아웃 발생. |
 | **해결 방법**    | 1. **하트비트를 이용한 Ping-Pong 메시지 구현** <br> - 클라이언트와 서버 간 주기적으로 `ping` 및 `pong` 메시지를 교환하여 연결 유지. <br> <br> 2. **타임아웃 설정 최적화** <br> - Nginx에서 `proxy_read_timeout` 값을 충분히 증가시켜 하트비트로 연결 유지 가능하도록 설정.                     |
 
-자세한 내용은 frontend, backend 레포지토리에서 봐주시면 감사하겠습니다.
+프로젝트의 자세한 내용은 frontend, backend 레포지토리에서 봐주시면 감사하겠습니다.
 <li>
     [FE] : https://github.com/bang015/Molly-frontend
 </li>
